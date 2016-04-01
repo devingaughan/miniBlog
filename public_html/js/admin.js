@@ -12,7 +12,7 @@ $(function () {
      
      $('.main-container').html(loginTemplate);
      
-     $(document).on('submit', 'form-signin', function(event){
+     $(document).on('submit', '.form-signin', function(event){
          event.preventDefault();
          
          var data = $(this).serializeArray(),
@@ -30,13 +30,19 @@ function Posts(args) {
     this.authorEmail = args.authorEmail || "";
 }
 
-function userLoggedIn() {
+function userLoggedIn(user) {
     console.log("user successfully logged in");
+    
+    var welcomeScript = $('#welcome-template').html();
+    var welcomeTemplate = Handlebars.compile(welcomeScript);
+    var welcomeHTML = welcomeTemplate(user);
+    
+    $('.main-container').html(welcomeHTML);
 }
 
 function gotError(error) {
     console.log("Error message - " + error.message);
-    console.log("Error code -" + error.code);
+    console.log("Error code - " + error.code);
 }
 
 
