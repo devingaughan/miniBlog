@@ -4,6 +4,7 @@ $(function () {
         VERSION = "v1";
         
     Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
+    
      if(Backendless.UserService.isValidLogin()) {
          userLoggedIn(Backendless.LocalCache.get("current-user-id"));
      } else {
@@ -84,6 +85,7 @@ function userLoggedOut() {
 }
 
 function gotError(error) {
+    Materialize.toast('Incorrect Password', 4000);
     console.log("Error message - " + error.message);
     console.log("Error code - " + error.code);
 }

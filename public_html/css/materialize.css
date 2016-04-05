@@ -3,71 +3,71 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-.materialize-red.lighten-5 {
-  background-color: #fdeaeb !important;
+materialize-red.lighten-5 {
+  background-color: #33cc33 !important;
 }
 
 .materialize-red-text.text-lighten-5 {
-  color: #fdeaeb !important;
+  color: #33cc33 !important;
 }
 
-.materialize-red.lighten-4 {
+.materialize-green.lighten-4 {
   background-color: #f8c1c3 !important;
 }
 
-.materialize-red-text.text-lighten-4 {
+.materialize-green-text.text-lighten-4 {
   color: #f8c1c3 !important;
 }
 
-.materialize-red.lighten-3 {
+.materialize-green.lighten-3 {
   background-color: #f3989b !important;
 }
 
-.materialize-red-text.text-lighten-3 {
+.materialize-green-text.text-lighten-3 {
   color: #f3989b !important;
 }
 
-.materialize-red.lighten-2 {
+.materialize-green.lighten-2 {
   background-color: #ee6e73 !important;
 }
 
-.materialize-red-text.text-lighten-2 {
+.materialize-green-text.text-lighten-2 {
   color: #ee6e73 !important;
 }
 
-.materialize-red.lighten-1 {
+.materialize-green.lighten-1 {
   background-color: #ea454b !important;
 }
 
-.materialize-red-text.text-lighten-1 {
+.materialize-green-text.text-lighten-1 {
   color: #ea454b !important;
 }
 
-.materialize-red {
+.materialize-green {
   background-color: #e51c23 !important;
 }
 
-.materialize-red-text {
+.materialize-green-text {
   color: #e51c23 !important;
 }
 
-.materialize-red.darken-1 {
+.materialize-green.darken-1 {
   background-color: #d0181e !important;
 }
 
-.materialize-red-text.text-darken-1 {
+.materialize-green-text.text-darken-1 {
   color: #d0181e !important;
 }
 
-.materialize-red.darken-2 {
+.materialize-green.darken-2 {
   background-color: #b9151b !important;
 }
 
-.materialize-red-text.text-darken-2 {
+.materialize-green-text.text-darken-2 {
   color: #b9151b !important;
 }
 
-.materialize-red.darken-3 {
+.materialize-green.darken-3 {
   background-color: #a21318 !important;
 }
 
