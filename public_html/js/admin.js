@@ -35,7 +35,8 @@ $(function () {
         var data = $(this).serializeArray(),
             title = data[0].value,
             content = data[1].value;
-            
+                
+
             var dataStore = Backendless.Persistence.of(Posts);
             
             var postObject = new Posts({
@@ -48,7 +49,11 @@ $(function () {
             
             this.title.value = "";
             this.content.value = "";
+            
+        });     
     });
+            
+    
     
     $(document).on('click', '.logout', function (){
         Backendless.UserService.logout(new Backendless.Async(userLoggedOut, gotError));
@@ -57,7 +62,7 @@ $(function () {
         var loginTemplate = Handlebars.compile(loginScript);
         $('.main-container').html(loginTemplate);
     });
-});
+
 
 function Posts(args) {
     args = args || {};
