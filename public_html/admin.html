@@ -14,14 +14,23 @@
 
     <body>
         <header>
-            <nav>
-                <div class="nav-wrapper green accent-3">
+                <nav>
+                <div class="nav-wrapper green accent-3 ">
                     <a href="#" class="brand-logo">Blog</a>
-                    <ul class="right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="admin.html">Admin</a></li>
-                    </ul>
-                </div>
+                    <ul class="right active">
+                       
+  <li>
+      
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="index.html">Home<span class=" new badge">1</span></a></li>
+    <li><a href="admin.html">Admin<span class="badge">1</span></a></li>
+   
+  </ul>
+  <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Menu<i class="mdi-navigation-arrow-drop-down right"></i></a>
+		
+               
+	  </ul>
+	</div>
             </nav>
         </header>
         <main>
@@ -90,18 +99,19 @@
       </script>
       <script id="add-blog-template" type="text/x-handlebars-template">
              <h2>Add a new Blog</h2>
+             
       <div class="row">
           <form class="col s12 form-add-blog">
               <div class="row">
                   <div class="input-field col s12">
                       <input id="title" type="text" name="title">
-                      <label for="title"></label>
+                      <label for="title">Add Title</label>
                   </div>
               </div>
                <div class="row">
                   <div class="input-field col s12">
                       <textarea id="content" name="content" class="materialize-textarea"></textarea>
-                      <label for="content"></label>
+                      <label for="content">Add statment</label>
                   </div>
               </div>
                <div class="row">
